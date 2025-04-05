@@ -68,7 +68,7 @@ pytest test.py
 
 ## Calling the APIs using Postman
 
-> ⚠️ Make sure **Postman** is installed before proceeding.
+> Make sure **Postman** is installed before proceeding.
 
 1. Import the `Sensor Rest APIs.postman_collection.json` file into Postman.
 2. Modify the JSON body in any request and hit **Send**!
