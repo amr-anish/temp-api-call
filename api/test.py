@@ -1,6 +1,5 @@
 import pytest
 import logging
-import warnings
 from fastapi.testclient import TestClient
 from unittest.mock import MagicMock
 from sqlalchemy.orm import Session
