@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "66b6f145-b9d9-4da8-b522-61f67e51a444",
+		"name": "Sensor Rest APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23732333"
+	},
+	"item": [
+		{
+			"name": "Add the Data",
+			"item": [
+				{
+					"name": "Add Current Temperature",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Temperature\",\r\n    \"value\": 35.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Current Temperature - Custom Timestamp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Temperature\",\r\n    \"value\": 35.5,\r\n    \"timestamp\": \"2025-04-04T12:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Current Air Quality",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Air Quality\",\r\n    \"value\": 35.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Current Air Quality - Custom Timestamp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Air Quality\",\r\n    \"value\": 35.5,\r\n    \"timestamp\": \"2025-04-04T12:00:00\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Current Humidity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Humidity\",\r\n    \"value\": 56.9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Current Humidity - Custom Timestamp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\" : \"1\",\r\n    \"metric\": \"Humidity\",\r\n    \"value\": 56.9,\r\n    \"timestamp\": \"2025-04-04T12:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/sensorapi/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"sensorapi",
+								"data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get all the data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/sensorapi/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sensorapi",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all the data using query-using time",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sensor_id\": [\"1\"], \r\n    \"start_date\": \"2025-04-01T00:00:00\",\r\n    \"end_date\": \"2025-04-05T23:59:59\",\r\n    \"metrics\": [\"Temperature\", \"Humidity\"],\r\n    \"stats\": \"average\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sensorapi/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sensorapi",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all the data using query without time",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sensor_id\": [\"1\"], \r\n    \"metrics\": [\"Temperature\"],\r\n    \"stats\": \"max\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/sensorapi/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"sensorapi",
+						"query"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
