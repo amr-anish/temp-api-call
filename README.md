@@ -1,5 +1,13 @@
 # temp-api-call
 
+## Video
+
+
+
+https://github.com/user-attachments/assets/95d96dcf-a05d-4e1e-acbd-b12fbf66f9a3
+
+
+
 ## Overview
 
 This project demonstrates a simple REST API to simulate and fetch temperature sensor data. It uses a lightweight SQLite database for quick setup, closely resembling MySQL in structure and usage, making it ideal for proof-of-concept development.
